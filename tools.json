@@ -1,0 +1,263 @@
+{
+  "categories": {
+    "criação de personagens": {
+      "title": "Criação De Personagens Consistentes",
+      "description": "Ferramentas especializadas para criar personagens únicos e consistentes",
+      "icon": "Users",
+      "tools": [
+        {
+          "name": "Artbreeder",
+          "description": "Plataforma que utiliza redes generativas adversariais (GANs) para criar e misturar imagens, ideal para gerar personagens com características consistentes.",
+          "url": "https://artbreeder.com",
+          "gradient": "from-purple-500 to-pink-500",
+          "recommended": true,
+          "tags": ["geração de imagens", "personagens", "GANs"]
+        },
+        {
+          "name": "Character Creator 4",
+          "description": "Software completo para criação de personagens 3D, com ferramentas de IA para geração de texturas e animações, permitindo consistência visual.",
+          "url": "https://www.reallusion.com/character-creator/",
+          "gradient": "from-blue-500 to-cyan-500",
+          "recommended": true,
+          "tags": ["3D", "personagens", "animação"]
+        },
+        {
+          "name": "Midjourney",
+          "description": "Ferramenta de geração de imagens por IA que permite criar personagens consistentes usando referências e prompts específicos.",
+          "url": "https://midjourney.com",
+          "gradient": "from-purple-600 to-blue-600",
+          "recommended": true,
+          "tags": ["geração de imagens", "arte", "prompts"]
+        },
+        {
+          "name": "Stable Diffusion",
+          "description": "Modelo de IA open-source para geração de imagens que pode ser treinado para manter consistência de personagens.",
+          "url": "https://stability.ai",
+          "gradient": "from-green-500 to-emerald-500",
+          "recommended": true,
+          "tags": ["open-source", "geração de imagens", "customizável"]
+        }
+      ]
+    },
+    "geração de texto": {
+      "title": "Assistentes de Escrita Inteligente",
+      "description": "Ferramentas avançadas para criação de conteúdo textual e conversação",
+      "icon": "MessageSquare",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "description": "Modelo de linguagem avançado para conversação e geração de texto em diversos contextos.",
+          "url": "https://chat.openai.com",
+          "gradient": "from-green-500 to-teal-500",
+          "recommended": true,
+          "tags": ["conversação", "texto", "OpenAI"]
+        },
+        {
+          "name": "Claude",
+          "description": "Assistente de IA focado em conversas úteis, harmless e honestas para diversas tarefas.",
+          "url": "https://claude.ai",
+          "gradient": "from-orange-500 to-red-500",
+          "recommended": true,
+          "tags": ["assistente", "seguro", "Anthropic"]
+        },
+        {
+          "name": "Gemini",
+          "description": "Modelo multimodal do Google para geração de texto e análise de conteúdo.",
+          "url": "https://gemini.google.com",
+          "gradient": "from-blue-500 to-purple-500",
+          "recommended": true,
+          "tags": ["multimodal", "Google", "análise"]
+        },
+        {
+          "name": "Manus",
+          "description": "Agente de IA autônomo para tarefas complexas, criação de conteúdo e automação de processos.",
+          "url": "https://manus.im",
+          "gradient": "from-yellow-500 to-orange-500",
+          "recommended": true,
+          "tags": ["agente autônomo", "automação", "tarefas complexas"],
+          "featured": true
+        }
+      ]
+    },
+    "edição de imagens": {
+      "title": "Criação e Edição Visual",
+      "description": "Ferramentas para editar, melhorar e criar imagens com IA",
+      "icon": "Image",
+      "tools": [
+        {
+          "name": "DALL-E 3",
+          "description": "Gerador de imagens da OpenAI com alta qualidade e precisão nos prompts.",
+          "url": "https://openai.com/dall-e-3",
+          "gradient": "from-purple-500 to-pink-500",
+          "recommended": true,
+          "tags": ["geração de imagens", "OpenAI", "alta qualidade"]
+        },
+        {
+          "name": "Canva AI",
+          "description": "Ferramentas de design com IA integradas para criação rápida de conteúdo visual.",
+          "url": "https://canva.com",
+          "gradient": "from-blue-500 to-cyan-500",
+          "recommended": true,
+          "tags": ["design", "templates", "fácil uso"]
+        },
+        {
+          "name": "Photoshop AI",
+          "description": "Recursos de IA integrados ao Photoshop para edição avançada de imagens.",
+          "url": "https://adobe.com/photoshop",
+          "gradient": "from-indigo-500 to-purple-500",
+          "recommended": true,
+          "tags": ["edição profissional", "Adobe", "avançado"]
+        },
+        {
+          "name": "LoveArt",
+          "description": "Plataforma especializada em criação de arte digital e designs únicos com IA.",
+          "url": "https://loveart.ai",
+          "gradient": "from-pink-500 to-rose-500",
+          "recommended": true,
+          "tags": ["arte digital", "criativo", "único"]
+        }
+      ]
+    },
+    "criação de vídeos": {
+      "title": "Produção de Vídeo com IA",
+      "description": "Ferramentas para criar e editar vídeos usando inteligência artificial",
+      "icon": "Video",
+      "tools": [
+        {
+          "name": "Runway ML",
+          "description": "Plataforma completa para criação de vídeos com IA, incluindo geração e edição.",
+          "url": "https://runwayml.com",
+          "gradient": "from-green-500 to-blue-500",
+          "recommended": true,
+          "tags": ["geração de vídeo", "edição", "completo"]
+        },
+        {
+          "name": "Pika Labs",
+          "description": "Ferramenta de geração de vídeos curtos a partir de texto e imagens.",
+          "url": "https://pika.art",
+          "gradient": "from-purple-500 to-indigo-500",
+          "recommended": true,
+          "tags": ["vídeos curtos", "texto para vídeo", "rápido"]
+        },
+        {
+          "name": "Synthesia",
+          "description": "Criação de vídeos com avatares virtuais falando em múltiplos idiomas.",
+          "url": "https://synthesia.io",
+          "gradient": "from-orange-500 to-red-500",
+          "recommended": true,
+          "tags": ["avatares", "multilíngue", "apresentações"]
+        },
+        {
+          "name": "Luma AI",
+          "description": "Ferramenta para criação de vídeos 3D e captura de realidade com IA.",
+          "url": "https://lumalabs.ai",
+          "gradient": "from-cyan-500 to-blue-500",
+          "recommended": true,
+          "tags": ["3D", "realidade capturada", "inovador"]
+        }
+      ]
+    },
+    "análise de dados": {
+      "title": "Análise Inteligente de Dados",
+      "description": "Ferramentas para processar, analisar e visualizar dados com IA",
+      "icon": "BarChart3",
+      "tools": [
+        {
+          "name": "Julius AI",
+          "description": "Assistente de IA para análise de dados e criação de visualizações.",
+          "url": "https://julius.ai",
+          "gradient": "from-blue-500 to-teal-500",
+          "recommended": true,
+          "tags": ["análise", "visualização", "assistente"]
+        },
+        {
+          "name": "DataRobot",
+          "description": "Plataforma de machine learning automatizado para análise preditiva.",
+          "url": "https://datarobot.com",
+          "gradient": "from-indigo-500 to-blue-500",
+          "recommended": true,
+          "tags": ["machine learning", "preditivo", "automatizado"]
+        },
+        {
+          "name": "Tableau AI",
+          "description": "Recursos de IA integrados ao Tableau para análise avançada de dados.",
+          "url": "https://tableau.com",
+          "gradient": "from-cyan-500 to-blue-500",
+          "recommended": true,
+          "tags": ["visualização", "business intelligence", "profissional"]
+        },
+        {
+          "name": "Gamma",
+          "description": "Ferramenta para criação de apresentações e análises visuais com IA.",
+          "url": "https://gamma.app",
+          "gradient": "from-purple-500 to-pink-500",
+          "recommended": true,
+          "tags": ["apresentações", "visual", "automático"]
+        }
+      ]
+    },
+    "tradução automática": {
+      "title": "Tradução e Comunicação Global",
+      "description": "Ferramentas para tradução e comunicação em múltiplos idiomas",
+      "icon": "Languages",
+      "tools": [
+        {
+          "name": "DeepL",
+          "description": "Tradutor com IA que oferece traduções mais naturais e precisas.",
+          "url": "https://deepl.com",
+          "gradient": "from-blue-600 to-indigo-600",
+          "recommended": true,
+          "tags": ["tradução", "natural", "preciso"]
+        },
+        {
+          "name": "Google Translate",
+          "description": "Serviço de tradução do Google com suporte a mais de 100 idiomas.",
+          "url": "https://translate.google.com",
+          "gradient": "from-green-500 to-blue-500",
+          "recommended": true,
+          "tags": ["multilíngue", "Google", "amplo suporte"]
+        },
+        {
+          "name": "Reverso",
+          "description": "Plataforma de tradução com contexto e exemplos de uso.",
+          "url": "https://reverso.net",
+          "gradient": "from-orange-500 to-yellow-500",
+          "recommended": true,
+          "tags": ["contexto", "exemplos", "aprendizado"]
+        }
+      ]
+    },
+    "desenvolvimento web": {
+      "title": "Desenvolvimento Web e Apps",
+      "description": "Ferramentas para criar sites e aplicações com IA",
+      "icon": "Code",
+      "tools": [
+        {
+          "name": "Lovable",
+          "description": "Plataforma para criação de aplicações web completas usando IA.",
+          "url": "https://lovable.dev",
+          "gradient": "from-pink-500 to-purple-500",
+          "recommended": true,
+          "tags": ["desenvolvimento", "web apps", "completo"]
+        },
+        {
+          "name": "Firebase",
+          "description": "Plataforma do Google para desenvolvimento de apps com recursos de IA.",
+          "url": "https://firebase.google.com",
+          "gradient": "from-yellow-500 to-orange-500",
+          "recommended": true,
+          "tags": ["backend", "Google", "escalável"]
+        },
+        {
+          "name": "Vercel AI",
+          "description": "Ferramentas de IA para desenvolvimento e deploy de aplicações web.",
+          "url": "https://vercel.com/ai",
+          "gradient": "from-black to-gray-600",
+          "recommended": true,
+          "tags": ["deploy", "desenvolvimento", "performance"]
+        }
+      ]
+    }
+  }
+}
+
