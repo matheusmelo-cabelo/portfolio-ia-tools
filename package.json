@@ -1,0 +1,36 @@
+{
+  "name": "suggestions-for-improving-portfolio-website-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusmelo-cabelo/portfolio-ia-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/matheusmelo-cabelo/portfolio-ia-tools/issues"
+  },
+  "homepage": "https://github.com/matheusmelo-cabelo/portfolio-ia-tools#readme",
+  "dependencies": {
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.3",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "tw-animate-css": "^1.3.8",
+    "vite": "^7.1.6"
+  }
+}
