@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button.jsx'
 import { Input } from '@/components/ui/input.jsx'
 import './App.css'
 
-// Importar dados das ferramentas (simulando import JSON)
-import toolsData from './data/tools.json'
+// Importar dados das ferramentas
+import toolsData from '../tools.json'
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('')
@@ -21,216 +21,6 @@ function App() {
     BarChart3,
     Languages,
     Code
-  }
-
-  // Dados das ferramentas organizadas por categoria com curadoria do Matheus
-  const categories = {
-    'criação de personagens': {
-      title: 'Criação De Personagens Consistentes',
-      description: 'Ferramentas especializadas para criar personagens únicos e consistentes',
-      icon: Users,
-      tools: [
-        {
-          name: 'Artbreeder',
-          description: 'Plataforma que utiliza redes generativas adversariais (GANs) para criar e misturar imagens, ideal para gerar personagens com características consistentes.',
-          url: 'https://artbreeder.com',
-          gradient: 'from-purple-500 to-pink-500'
-        },
-        {
-          name: 'Character Creator 4',
-          description: 'Software completo para criação de personagens 3D, com ferramentas de IA para geração de texturas e animações, permitindo consistência visual.',
-          url: 'https://www.reallusion.com/character-creator/',
-          gradient: 'from-blue-500 to-cyan-500'
-        },
-        {
-          name: 'Midjourney',
-          description: 'Ferramenta de geração de imagens por IA que permite criar personagens consistentes usando referências e prompts específicos.',
-          url: 'https://midjourney.com',
-          gradient: 'from-purple-600 to-blue-600'
-        },
-        {
-          name: 'Stable Diffusion',
-          description: 'Modelo de IA open-source para geração de imagens que pode ser treinado para manter consistência de personagens.',
-          url: 'https://stability.ai',
-          gradient: 'from-green-500 to-emerald-500'
-        }
-      ]
-    },
-    'geração de texto': {
-      title: 'Assistentes de Escrita Inteligente',
-      description: 'Ferramentas avançadas para criação de conteúdo textual e conversação',
-      icon: MessageSquare,
-      tools: [
-        {
-          name: 'ChatGPT',
-          description: 'Modelo de linguagem avançado para conversação e geração de texto em diversos contextos.',
-          url: 'https://chat.openai.com',
-          gradient: 'from-green-500 to-teal-500'
-        },
-        {
-          name: 'Claude',
-          description: 'Assistente de IA focado em conversas úteis, harmless e honestas para diversas tarefas.',
-          url: 'https://claude.ai',
-          gradient: 'from-orange-500 to-red-500'
-        },
-        {
-          name: 'Gemini',
-          description: 'Modelo multimodal do Google para geração de texto e análise de conteúdo.',
-          url: 'https://gemini.google.com',
-          gradient: 'from-blue-500 to-purple-500'
-        },
-        {
-          name: 'Manus',
-          description: 'Agente de IA autônomo para tarefas complexas, criação de conteúdo e automação de processos.',
-          url: 'https://manus.im',
-          gradient: 'from-yellow-500 to-orange-500',
-          featured: true
-        }
-      ]
-    },
-    'edição de imagens': {
-      title: 'Criação e Edição Visual',
-      description: 'Ferramentas para editar, melhorar e criar imagens com IA',
-      icon: Image,
-      tools: [
-        {
-          name: 'DALL-E 3',
-          description: 'Gerador de imagens da OpenAI com alta qualidade e precisão nos prompts.',
-          url: 'https://openai.com/dall-e-3',
-          gradient: 'from-purple-500 to-pink-500'
-        },
-        {
-          name: 'Canva AI',
-          description: 'Ferramentas de design com IA integradas para criação rápida de conteúdo visual.',
-          url: 'https://canva.com',
-          gradient: 'from-blue-500 to-cyan-500'
-        },
-        {
-          name: 'Photoshop AI',
-          description: 'Recursos de IA integrados ao Photoshop para edição avançada de imagens.',
-          url: 'https://adobe.com/photoshop',
-          gradient: 'from-indigo-500 to-purple-500'
-        },
-        {
-          name: 'LoveArt',
-          description: 'Plataforma especializada em criação de arte digital e designs únicos com IA.',
-          url: 'https://loveart.ai',
-          gradient: 'from-pink-500 to-rose-500'
-        }
-      ]
-    },
-    'criação de vídeos': {
-      title: 'Produção de Vídeo com IA',
-      description: 'Ferramentas para criar e editar vídeos usando inteligência artificial',
-      icon: Video,
-      tools: [
-        {
-          name: 'Runway ML',
-          description: 'Plataforma completa para criação de vídeos com IA, incluindo geração e edição.',
-          url: 'https://runwayml.com',
-          gradient: 'from-green-500 to-blue-500'
-        },
-        {
-          name: 'Pika Labs',
-          description: 'Ferramenta de geração de vídeos curtos a partir de texto e imagens.',
-          url: 'https://pika.art',
-          gradient: 'from-purple-500 to-indigo-500'
-        },
-        {
-          name: 'Synthesia',
-          description: 'Criação de vídeos com avatares virtuais falando em múltiplos idiomas.',
-          url: 'https://synthesia.io',
-          gradient: 'from-orange-500 to-red-500'
-        },
-        {
-          name: 'Luma AI',
-          description: 'Ferramenta para criação de vídeos 3D e captura de realidade com IA.',
-          url: 'https://lumalabs.ai',
-          gradient: 'from-cyan-500 to-blue-500'
-        }
-      ]
-    },
-    'análise de dados': {
-      title: 'Análise Inteligente de Dados',
-      description: 'Ferramentas para processar, analisar e visualizar dados com IA',
-      icon: BarChart3,
-      tools: [
-        {
-          name: 'Julius AI',
-          description: 'Assistente de IA para análise de dados e criação de visualizações.',
-          url: 'https://julius.ai',
-          gradient: 'from-blue-500 to-teal-500'
-        },
-        {
-          name: 'DataRobot',
-          description: 'Plataforma de machine learning automatizado para análise preditiva.',
-          url: 'https://datarobot.com',
-          gradient: 'from-indigo-500 to-blue-500'
-        },
-        {
-          name: 'Tableau AI',
-          description: 'Recursos de IA integrados ao Tableau para análise avançada de dados.',
-          url: 'https://tableau.com',
-          gradient: 'from-cyan-500 to-blue-500'
-        },
-        {
-          name: 'Gamma',
-          description: 'Ferramenta para criação de apresentações e análises visuais com IA.',
-          url: 'https://gamma.app',
-          gradient: 'from-purple-500 to-pink-500'
-        }
-      ]
-    },
-    'tradução automática': {
-      title: 'Tradução e Comunicação Global',
-      description: 'Ferramentas para tradução e comunicação em múltiplos idiomas',
-      icon: Languages,
-      tools: [
-        {
-          name: 'DeepL',
-          description: 'Tradutor com IA que oferece traduções mais naturais e precisas.',
-          url: 'https://deepl.com',
-          gradient: 'from-blue-600 to-indigo-600'
-        },
-        {
-          name: 'Google Translate',
-          description: 'Serviço de tradução do Google com suporte a mais de 100 idiomas.',
-          url: 'https://translate.google.com',
-          gradient: 'from-green-500 to-blue-500'
-        },
-        {
-          name: 'Reverso',
-          description: 'Plataforma de tradução com contexto e exemplos de uso.',
-          url: 'https://reverso.net',
-          gradient: 'from-orange-500 to-yellow-500'
-        }
-      ]
-    },
-    'desenvolvimento web': {
-      title: 'Desenvolvimento Web e Apps',
-      description: 'Ferramentas para criar sites e aplicações com IA',
-      icon: Code,
-      tools: [
-        {
-          name: 'Lovable',
-          description: 'Plataforma para criação de aplicações web completas usando IA.',
-          url: 'https://lovable.dev',
-          gradient: 'from-pink-500 to-purple-500'
-        },
-        {
-          name: 'Firebase',
-          description: 'Plataforma do Google para desenvolvimento de apps com recursos de IA.',
-          url: 'https://firebase.google.com',
-          gradient: 'from-yellow-500 to-orange-500'
-        },
-        {
-          name: 'Vercel AI',
-          description: 'Ferramentas de IA para desenvolvimento e deploy de aplicações web.',
-          url: 'https://vercel.com/ai',
-          gradient: 'from-black to-gray-600'
-        }
-      ]
-    }
   }
 
   // Categorias mais intuitivas para leigos
@@ -302,7 +92,7 @@ function App() {
     
     // Simular busca
     setTimeout(() => {
-      const results = categories[query.toLowerCase()]
+      const results = toolsData.categories[query.toLowerCase()]
       setSearchResults(results || null)
       setIsSearching(false)
     }, 500)
@@ -314,6 +104,7 @@ function App() {
   }
 
   if (searchResults) {
+    const IconComponent = searchResults.icon ? iconMap[searchResults.icon] : null;
     return (
       <div className="min-h-screen bg-black text-white">
         {/* Header */}
@@ -350,7 +141,7 @@ function App() {
 
           <div className="bg-gray-900/50 rounded-xl p-6 border-l-4 border-yellow-400 animate-in slide-in-from-left duration-700">
             <div className="flex items-center gap-3 mb-4">
-              {searchResults.icon && <searchResults.icon className="w-8 h-8 text-yellow-400" />}
+              {IconComponent && <IconComponent className="w-8 h-8 text-yellow-400" />}
               <h2 className="text-2xl font-bold text-yellow-400">{searchResults.title}</h2>
             </div>
             <p className="text-gray-300 mb-6 text-lg">{searchResults.description}</p>
@@ -549,4 +340,3 @@ function App() {
 }
 
 export default App
-
