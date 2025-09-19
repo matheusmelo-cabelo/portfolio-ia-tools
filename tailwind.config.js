@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import twAnimate from 'tw-animate-css';
+
+export default {
   content: [
     "./index.html",
     "./App.jsx",
@@ -9,6 +11,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tw-animate-css'),
+    twAnimate,
   ],
 }
